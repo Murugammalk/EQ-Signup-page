@@ -1,0 +1,57 @@
+.left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .LeftContainer {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .BackgroundOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);
+    mix-blend-mode: overlay;
+    opacity: 0.9;
+  }
+  
+  .Logo img {
+    max-width: 200px;
+    margin-bottom: 20px;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .Title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .Subtitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+    animation: fadeIn 2s ease-in-out 1s;
+  }
+  
+  /* Animation styles */
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
